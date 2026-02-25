@@ -9,7 +9,7 @@ html{
 }
 
 section{
-  height:100vh;
+ paddding:100px 20px;
 }
 
 .navbar{
@@ -387,4 +387,5 @@ padding: 0px;
 
 .contact-form button:hover {
   background: white;
+
 }
