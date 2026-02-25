@@ -1,3 +1,54 @@
+@media (max-width: 768px){
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links a{
+    margin: 8px 0;
+  }
+
+  .hero-box{
+    padding: 20px;
+  }
+
+  .lux-title{
+    font-size: 30px;
+  }
+
+  .about-wrapper{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img{
+    width: 100%;
+  }
+
+  .div1{
+    justify-content: center;
+  }
+
+  #sawirk1{
+    justify-content: center;
+  }
+
+  .contact-container{
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+}
+
+
 *{
   margin:0;
   padding:0;
@@ -389,3 +440,4 @@ padding: 0px;
   background: white;
 
 }
+
