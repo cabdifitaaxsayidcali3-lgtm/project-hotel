@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    body{
+        background-color: #0d1b2a;
+    }
+    form{
+        line-height: 35px;
+        font-size: 10px;
+        justify-content: right;
+        align-items:center;
+        position: fixed;
+        background: rgba(0,0,0,0.7) ;
+        border-radius: 20px;
+              
+    margin-left: 2px;
+    }
+    label{
+        margin: 10px;
+        color: #007bff;
+        font-size: 20px;
+
+
+    }
+    select{
+        width: fit-content;
+        height: fit-content;
+        font-size: 20px;
+    }
+    option{
+        height: 100px;
+        width: 100px;
+    }
+    input{
+        width: fit-content;
+        height: fit-content;
+        font-size: 20px;
+    }
+    button{
+        width: 150px;
+        height: 30px;
+          background: gold;
+           font-weight: bold;
+           border-radius: 5px;
+          font-size: 16px;
+          
+    }
+    #header2{
+        background: #0c1f3f;
+    height: 50px;
+     display: flex;
+     text-align: center;
+     justify-content: space-between;
+    
+}
+#cabdi{
+    margin-left: 400px;
+    font-weight: bold;
+    
+}
+
+#ciwaan1{
+    font-size: 20px;
+       color: yellow;
+       padding: 2px;
+}
+
+#links1{
+    font-size: 35px;
+    background: #0c1f3f;
+    margin-right: 175px;
+  
+
+}
+
+
+#button3{
+    background: gold;
+ 
+
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 175px;
+  
+}
+#button3 button:hover{
+     background-color: orange;
+}
+h2{
+    font-family: weight;
+    color: #005eff;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#soomuuji{
+    margin-top: 229px;
+    box-shadow: #005eff 5px 5px 10px;
+    width: fit-content;
+    color: white;
+    font-size: 20px;
+
+    
+}
+</style>
+<body>
+
+
+<header id="header2">
+   
+    <h1 id="ciwaan1">🏨 Abdi Luxury Hotel</h1>
+
+    <div id="links1">
+
+ <form action="index.html"> 
+ <button id="button3" >Go Back</button>
+ </form>
+    </div>
+   </header>
+
+<h2 style="text-align: center;">🏨 Abdi Luxury Hotel</h2>
+<br>
+<br>
+    <form action="">
+        <label for="">Magaca:</label>
+        <input type="text" placeholder="Full Name" id="name"> <br>
+        <label for="">Email:</label>
+        <input type="email" placeholder="Email Address" id="gmail"><br>
+        <label for="">Chake in:</label>
+        <input type="date" id="date"><br>
+        <label for="">Chake Out:</label>
+        <input type="date" id="date1"><br>
+        <label for="">Rooms:</label>
+        <select  required id="rooms">
+            <option value=""></option>
+            <option value="Standard Room">Standard Room</option>
+            <option value="Deluxe Room">Deluxe Room</option>
+            <option value="Luxury Suite">Luxury Suite</option>
+            <option value="Executive Suite">Executive Suite</option>
+        </select> <br>
+      <button type="button" id="cabdi" onclick="myclick()">Confirm Booking</button>
+
+    </form>  
+    
+    <script>
+        function myclick(){
+
+        let Name=document.getElementById("name").value;
+        let Gmail=document.getElementById("gmail").value;
+        let Date=document.getElementById("date").value;
+        let Date1=document.getElementById("date1").value;
+        let Rooms=document.getElementById("rooms").value;
+        let soomuuji=document.getElementById("soomuuji");
+       
+         soomuuji.innerHTML=(
+       
+        "Name: " + Name + "<br>" +
+        "Email: " + Gmail + "<br>" +
+        "Check-in: " + Date + "<br>" +
+        "Check-out: " + Date1 + "<br>" +
+        "Room: " + Rooms
+    );
+
+
+        }
+
+
+        
+        
+
+
+
+
+        
+      
+
+
+    </script>
+    <div id="soomuuji"></div>
+
+</body>
+</html>
